@@ -11,7 +11,7 @@ import net.xaviersala.combatcavallers.LlocOnPicar;
  * Classe que implementa el comportament d'un boxejador trampós en un combat. 
  * Aquest jugador fa servir el cop il·legal i com a mínim sempre es protegeix el cap
  *
- * @author maribel
+ * @author Maribel Madueño Ruiz
  *
  */
 public class LluitadorTrampos implements ILluitador{
