@@ -12,11 +12,17 @@ pipeline {
     }
     
     stages {
-        stage('build') {
+        stage('Compilant') {
             steps {
                 echo 'Compilant...'  
                 sh 'mvn --version'
                 sh 'mvn clean compile'             
+            }
+        }
+        stage('Testejant') {
+            steps {
+                echo 'Testejant...'  
+          
             }
         }
     }
