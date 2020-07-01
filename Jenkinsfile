@@ -2,11 +2,19 @@
 //Jenkinsfile (Declarative Pipeline)
 
 pipeline {
-    agent { docker { image 'maven:3.3.3' } }
+
+    agent any
+    
+    environment {
+    
+    	JAVA_HOME = '/usr/lib/jvm/java-11-openjdk-amd64'
+    
+    }
+    
     stages {
         stage('build') {
             steps {
-                sh 'mvn --version'
+                echo 'Compilant...'
             }
         }
     }
