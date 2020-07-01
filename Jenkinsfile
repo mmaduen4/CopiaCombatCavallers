@@ -14,8 +14,15 @@ pipeline {
     stages {
         stage('build') {
             steps {
-                echo 'Compilant...'
+                echo 'Compilant...'               
             }
+            steps {                
+                sh 'mvn --version'
+            }
+            steps {                
+                sh 'mvn clean compile'
+            }
+
         }
     }
 }
