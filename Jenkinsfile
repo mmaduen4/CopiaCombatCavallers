@@ -22,9 +22,19 @@ pipeline {
         stage('Testejant') {
             steps {
                 echo 'Testejant...'  
-          
+          		/*dir("nomdir") {
+          		    sh "mvn test"
+          		    
+          		}*/
+
             }
         }
     }
+    //post {        
+    //    always {          
+    //        junit 'nomdir/target/surefire-reports/*.xml'
+    //    }
+    //}
+
 }
 
